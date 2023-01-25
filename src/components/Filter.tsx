@@ -4,8 +4,17 @@ import {
   RocketLaunchIcon,
 } from "@heroicons/react/24/outline";
 import { EllipsisVerticalIcon } from "@heroicons/react/24/solid";
+import { FC } from "react";
 
-export const Filter = () => {
+type FilterProps = {
+  currentTab: string;
+  setCurrentTab: (tab: string) => void;
+};
+
+export const Filter: FC<FilterProps> = ({ currentTab, setCurrentTab }) => {
+  const onChangeCurrenTab = (tab: string) => {
+    setCurrentTab(tab);
+  };
   return (
     <div className="bg-white w-full">
       <div className="flex justify-between items-center w-full">
@@ -15,12 +24,26 @@ export const Filter = () => {
         <EllipsisVerticalIcon width="24" height="24" />
       </div>
       <div className="flex gap-4 items-center my-5">
-        <div className="px-4 py-[6px] flex gap-1 items-center justify-center bg-indigo-500 rounded-full text-white text-sm">
+        <div
+          className={`px-4 py-[6px] flex gap-1 items-center justify-center rounded-full text-sm ${
+            currentTab == "hotel"
+              ? "bg-indigo-500 text-white"
+              : "border-gray-100 border-solid border"
+          }`}
+          onClick={() => onChangeCurrenTab("hotel")}
+        >
           <BuildingOfficeIcon width="16" height="16" />
           Hotels
         </div>
-        <div className="px-4 py-[6px] flex gap-1 items-center justify-center rounded-full text-sm border-gray-100 border-solid border">
-          <RocketLaunchIcon width="16" height="16"  />
+        <div
+          className={`px-4 py-[6px] flex gap-1 items-center justify-center rounded-full text-sm ${
+            currentTab == "flight"
+              ? "bg-indigo-500 text-white"
+              : "border-gray-100 border-solid border"
+          }`}
+          onClick={() => onChangeCurrenTab("flight")}
+        >
+          <RocketLaunchIcon width="16" height="16" />
           Flight
         </div>
       </div>

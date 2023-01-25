@@ -1,3 +1,4 @@
+
 import { FC } from "react";
 import { StarIcon } from "@heroicons/react/24/solid";
 
@@ -5,7 +6,7 @@ type ProdItemProps = {
   product: any;
 };
 
-export const ProductItem: FC<ProdItemProps> = ({ product }) => {
+export const FlightItem: FC<ProdItemProps> = ({ product }) => {
   return (
     <div className="my-3">
       <div className="rounded-xl">
