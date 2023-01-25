@@ -54,20 +54,6 @@ const Home = () => {
           Where would <br /> you want to go?
         </h1>
         {TabComponent}
-        {/* <div className="my-4 w-full"> */}
-        {/*   <input */}
-        {/*     className="bg-gray-100 p-4 rounded-2xl w-full" */}
-        {/*     placeholder="New york city" */}
-        {/*   /> */}
-        {/* </div> */}
-        {/* <div> */}
-        {/*   <h6 className="text-sm">Recently Checked</h6> */}
-        {/*   <div> */}
-        {/*     {data.map((prod: any, index: number) => ( */}
-        {/*     <ProductItem key={index} product={prod}/> */}
-        {/*     ))} */}
-        {/*   </div> */}
-        {/* </div> */}
       </div>
       <BottomNavigation />
     </main>
