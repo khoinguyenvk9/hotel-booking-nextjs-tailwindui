@@ -37,6 +37,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-Link template [https://dribbble.com/shots/19488976-xBooking-Flight-Hotel-Booking](https://dribbble.com/shots/19488976-xBooking-Flight-Hotel-Booking)
+Link template [https://dribbble.com/shots/19488976-xBooking-Flight-Hotel-Booking](https://dribbble.com/shots/19488976-xBooking-Flight-Hotel-Booking){:target="_blank"}
 
 ![alt Hotel-tag](./public/Screenshot-hotel-tag.png)
